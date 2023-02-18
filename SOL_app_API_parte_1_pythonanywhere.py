@@ -27,9 +27,11 @@ def get_predict():
     crs = conn.cursor()
 
     # Get POST JSON data
-    data = request.get_json()
+    
     if type(data) != dict:
         data = request.args
+    else:
+        data = request.get_json()
     tv = data.get("TV",0)
     radio = data.get("radio",0)
     newspaper = data.get("newspaper",0)
