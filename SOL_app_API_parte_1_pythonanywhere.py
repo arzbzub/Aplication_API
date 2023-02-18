@@ -52,6 +52,6 @@ def return_predicts():
 
 @app.route('/', methods=['GET'])
 def mensaje():
-    return "Hola, soy tu predictor de ventas. (Te comparto pantalla)"
+    return "Hola, soy tu predictor de ventas. Prueba"
 
 #app.run(port=4000)
